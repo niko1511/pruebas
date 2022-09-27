@@ -1,0 +1,15 @@
+table{
+    border: 1px solid red;
+}
+
+a{
+    text-decoration: none;
+}
+
+#disponible{
+    background-color: aquamarine;
+}
+
+#ocupado{
+    background-color:brown;
+}
