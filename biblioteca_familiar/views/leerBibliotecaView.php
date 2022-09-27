@@ -2,7 +2,7 @@
 <?php
 
 echo '<pre>';
-//print_r($biblioteca->autores);
+//print_r($biblioteca);
 //print_r($statusLibro->statusLibro);
 echo '<pre>';
 echo '<table>';
