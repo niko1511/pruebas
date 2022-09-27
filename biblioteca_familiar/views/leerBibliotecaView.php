@@ -2,8 +2,8 @@
 <?php
 
 echo '<pre>';
-//print_r($bibliteca);
-//print_r($statusLibro);
+//print_r($biblioteca->autores);
+//print_r($statusLibro->statusLibro);
 echo '<pre>';
 echo '<table>';
 echo '<tr>';
@@ -11,7 +11,7 @@ echo '<th>Libro</th>';
 echo '<th>Estado</th>';
 echo '<th>Ubicación</th>';
 echo '</tr>';
-foreach ($bibliteca->autores as $fila) {
+foreach ($biblioteca->autores as $fila) {
 	$id = $fila['id'];
 	
 	$statusName = "<td id='disponible'><strong>Disponible</strong></td>";

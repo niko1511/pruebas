@@ -75,7 +75,7 @@ class Biblioteca extends connect
 
 	public function leerLibros()
 	{
-		$sql = "SELECT * FROM `bf_libros` WHERE 1";
+		$sql = "SELECT `bf_libro_persona`.`id`, bf_autor.nombre AS autor, bf_personas.nombre, `fecha_inicio`, `fecha_fin`, bf_libros.nombre, bf_estante.cordenadas, bf_prestamos_persona.status FROM `bf_libro_persona`, `bf_autor`, `bf_personas`, `bf_libros`, `bf_estante`, `bf_prestamos_persona` WHERE bf_libro_persona.id_persona = bf_personas.id AND bf_libro_persona.id_libro = bf_libros.id AND bf_libro_persona.autor = bf_autor.id AND bf_libro_persona.id_estante = bf_estante.id AND bf_prestamos_persona.id = bf_libro_persona.id; ";
 
 		$query = $this->db->query($sql);
 		while ($fila = $query->fetch_assoc()) {
@@ -103,7 +103,7 @@ class Biblioteca extends connect
 
 
 	public function statusLibro(){
-		$sql ="SELECT * FROM `bf_prestamos_persona` WHERE 1";
+		$sql ="SELECT * FROM `bf_libros` ";
 		$query = $this->db->query($sql);
 		while ($fila = $query->fetch_assoc()) {
 			$this->statusLibro[] = $fila;
@@ -119,7 +119,7 @@ class Biblioteca extends connect
 
 	public function leerUsuario($idLibro)
 	{
-		$sql = "SELECT * FROM `bf_libro_persona` WHERE `id` = $idLibro";
+		$sql = "SELECT `bf_libro_persona`.`id`, bf_autor.nombre AS autor, bf_personas.nombre, `fecha_inicio`, `fecha_fin`, bf_libros.nombre, bf_estante.cordenadas, bf_libro_persona.status FROM `bf_libro_persona`, `bf_autor`, `bf_personas`, `bf_libros`, `bf_estante` WHERE bf_libro_persona.id_persona = bf_personas.id AND bf_libro_persona.id_libro = bf_libros.id AND bf_libro_persona.autor = bf_autor.id AND bf_libro_persona.id_estante = bf_estante.id AND `bf_libro_persona`.`id` = $idLibro;";
 
 		$query = $this->db->query($sql);
 		$fila = $query->fetch_assoc();
@@ -128,7 +128,7 @@ class Biblioteca extends connect
 
 	public function leerUsuarios()
 	{
-		$sql = "SELECT * FROM `bf_libro_persona` WHERE 1";
+		$sql = "SELECT bf_personas.id, bf_personas.nombre, bf_libros.id, bf_libros.nombre as libro, bf_libros.status FROM `bf_personas`, bf_prestamos_persona, `bf_libros` WHERE bf_personas.id = bf_prestamos_persona.id AND bf_libros.id = bf_personas.id; ";
 
 		$query = $this->db->query($sql);
 		while ($fila = $query->fetch_assoc()) {

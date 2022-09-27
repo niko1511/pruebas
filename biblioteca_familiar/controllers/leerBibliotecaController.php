@@ -1,7 +1,7 @@
 <?php 
 include '../models/bibliotecaModel.php';
-$bibliteca = new Biblioteca();
-$bibliteca -> leerLibros();
+$biblioteca = new Biblioteca();
+$biblioteca -> leerLibros();
 
 $statusLibro = new Biblioteca();
 $statusLibro -> statusLibro();
