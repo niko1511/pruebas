@@ -2,7 +2,9 @@
 include '../models/bibliotecaModel.php';
 $biblioteca = new Biblioteca();
 $biblioteca -> leerLibros();
-$biblioteca -> statusLibro();
+
+$statusLibro = new Biblioteca();
+$statusLibro -> statusLibro();
 
 include_once '../views/headView.php';
 include_once '../views/leerBibliotecaView.php';
