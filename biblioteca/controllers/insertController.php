@@ -5,7 +5,9 @@ $ubicaciones = new Biblioteca();
 $autores -> leerAutors();
 $ubicaciones -> leerUbicaciones();
 
-include '../views/insertLibroView.php'
+include_once '../views/headView.php';
+include_once '../views/insertLibroView.php';
+include_once '../views/footerView.php';
 
 
 ?>

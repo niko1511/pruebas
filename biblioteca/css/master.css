@@ -1,9 +1,11 @@
 table{
     border: 1px solid red;
+    text-align: center;
 }
 
 a{
     text-decoration: none;
+    
 }
 
 #disponible{
@@ -11,5 +13,6 @@ a{
 }
 
 #ocupado{
+    color: beige;
     background-color:brown;
 }

@@ -14,5 +14,5 @@
     <ul>
         <li><a href="../controllers/insertController.php">Nuevo libro</a></li>
         <li><a href="../controllers/insertLocationController.php">Agregar ubicación</a></li>
-        <li><a href="../controllers/insertLocationController.php">Agregar autor</a></li>
+        <li><a href="../controllers/insertAutorController.php">Agregar autor</a></li>
     </ul>

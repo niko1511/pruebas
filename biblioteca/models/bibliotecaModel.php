@@ -12,6 +12,7 @@ class Biblioteca extends connect
 	public $deleteLibro;
 	public $statusLibro;
 	public $datoUsuario;
+	public $modificarLibro;
 	public function __construct()
 	{
 		$this->db = connect::conexion();
@@ -51,6 +52,26 @@ class Biblioteca extends connect
 	public function InsertLibroBiblioteca($titulo, $autor, $ubicacion)
 	{
 		$sql = "INSERT INTO `bf_libros` (`id`, `nombre`, `id_autor`, `id_estante`) VALUES (NULL, '$titulo', '$autor', '$ubicacion');";
+		$this->db->query($sql);
+	}
+
+
+	public function InsertNewLocation($ubicacion)
+	{
+		$sql = "INSERT INTO `bf_estante` (`id`, `cordenadas`) VALUES (NULL, '$ubicacion'); ";
+		$this->db->query($sql);
+	}
+
+	public function InsertNewAutor($ubicacion)
+	{
+		$sql = "INSERT INTO `bf_autor` (`id`, `nombre`) VALUES (NULL, '$ubicacion'); ";
+		$this->db->query($sql);
+	}
+
+
+	public function modificarLibro($id,$titulo, $autor, $ubicacion)
+	{
+		$sql = "UPDATE `bf_libros` SET `nombre` = '$titulo', `id_autor` = '$autor', `id_estante` = '$ubicacion' WHERE `bf_libros`.`id` = $id; ";
 		$this->db->query($sql);
 	}
 
