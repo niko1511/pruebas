@@ -74,8 +74,8 @@ class Biblioteca extends connect
 	}
 
 	public function leerLibros()
-	{
-		$sql = "SELECT `bf_libro_persona`.`id`, bf_autor.nombre AS autor, bf_personas.nombre, `fecha_inicio`, `fecha_fin`, bf_libros.nombre, bf_estante.cordenadas, bf_prestamos_persona.status FROM `bf_libro_persona`, `bf_autor`, `bf_personas`, `bf_libros`, `bf_estante`, `bf_prestamos_persona` WHERE bf_libro_persona.id_persona = bf_personas.id AND bf_libro_persona.id_libro = bf_libros.id AND bf_libro_persona.autor = bf_autor.id AND bf_libro_persona.id_estante = bf_estante.id AND bf_prestamos_persona.id = bf_libro_persona.id; ";
+	{    //SELECT `bf_libro_persona`.`id`, bf_autor.nombre AS autor, bf_personas.nombre, `fecha_inicio`, `fecha_fin`, bf_libros.nombre, bf_estante.cordenadas, bf_prestamos_persona.status FROM `bf_libro_persona`, `bf_autor`, `bf_personas`, `bf_libros`, `bf_estante`, `bf_prestamos_persona` WHERE bf_libro_persona.id_persona = bf_personas.id AND bf_libro_persona.id_libro = bf_libros.id AND bf_libro_persona.autor = bf_autor.id AND bf_libro_persona.id_estante = bf_estante.id AND bf_prestamos_persona.id = bf_libro_persona.id;
+		$sql = "SELECT * FROM `bf_libros` ";
 
 		$query = $this->db->query($sql);
 		while ($fila = $query->fetch_assoc()) {

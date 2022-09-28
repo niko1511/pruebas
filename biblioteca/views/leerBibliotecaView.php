@@ -3,7 +3,7 @@
 
 echo '<pre>';
 //print_r($biblioteca);
-//print_r($statusLibro->statusLibro);
+//print_r($statusLibro);
 echo '<pre>';
 echo '<table>';
 echo '<tr>';
