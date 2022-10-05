@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta charset="utf-8">
+<title>Ajax1 - Comprobar disponibilidad del login</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+
+function comprobar_disponibilidad(login)
+{   
+        var parametros = {"login":login};
+        $.ajax({
+                data:  parametros,
+                url:   'servidor/compruebaDisponibilidad.php',
+                dataType : 'html',
+                type:  'POST',
+                beforeSend: function () {
+                        $("#disponible").html("Comprobando");
+                },
+                success:  function (response) {
+                		if (response=="si")
+                			{$("#disponible").html("El usuario "+login+" SI está disponible.");}
+                        else
+                			{$("#disponible").html("El usuario "+login+" NO está disponible.");}
+                }
+        });
+}
+$(document).ready(function(){
+	$("#comprobar").click(function () {
+		comprobar_disponibilidad($("#login").val());
+    });
+});
+</script>
+</head>
+
+<body>
+<h1>Comprobar disponibilidad del login</h1>
+<form>
+	<label for="login">Nombre de usuario:</label>
+	<input type="text" name="login" id="login" />
+	<a id="comprobar" href="#">Comprobar disponibilidad...</a>
+</form>
+<div id="disponible"></div>
+</body>
+</html>

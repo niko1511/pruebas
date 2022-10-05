@@ -1,15 +1,17 @@
 <?php
-
 include_once '../models/bibliotecaModel.php';
 
-$ubicaciones = new Biblioteca();
-$ubicaciones->leerUbicaciones();
+$leerUsuarios = new Biblioteca();
+$leerUsuarios->leerUsuarios();
 
+echo '<pre>';
+//print_r($leerUsuarios->usuarios);
+echo '</pre>';
 include_once '../views/headView.php';
 ?>
 <section>
-<form action="../controllers/insertNewLocation.php" method="post">
-    <label >Nueva Ubicacion</label><input type="text" name="new_location">
+<form action="../controllers/insertNewUser.php" method="post">
+    <label >Nuevo Usuario</label><input type="text" name="new_user">
     <input type="submit" value="Agregar" name="agregar">
     <input type="submit" value="Cancelar" name="cancel">
 </form>
@@ -17,12 +19,12 @@ include_once '../views/headView.php';
 
 <table>
     <tr>
-        <th>Ubicaciones</th>
+        <th>Usuarios</th>
     </tr>
     <?php
-    foreach ($ubicaciones->locations as $loc) {
+    foreach ($leerUsuarios->usuarios as $user) {
         echo '<tr>';
-        echo '<td>' . $loc['cordenadas'] . '</td>';
+        echo '<td>' . $user['nombre'] . '</td>';
         echo '<td> <a href="">Borrar</a></td>';
         echo '<td> <a href="">Modificar</a></td>';
         echo '</tr>';
@@ -32,6 +34,6 @@ include_once '../views/headView.php';
 
 </table>
 </section>
-
-<?php include_once '../views/footerView.php'; ?>
-
+<?php 
+include_once '../views/footerView.php';
+?>

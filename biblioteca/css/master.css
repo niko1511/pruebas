@@ -1,18 +1,13 @@
-table{
-    border: 1px solid red;
-    text-align: center;
+:root {
+  --colorPrimario: white;
+  --colorSecundario: black;
 }
 
-a{
-    text-decoration: none;
-    
+* {
+  margin: 0px auto;
+  padding: 0px auto;
 }
 
-#disponible{
-    background-color: aquamarine;
-}
-
-#ocupado{
-    color: beige;
-    background-color:brown;
+html{
+  overflow: hidden;
 }

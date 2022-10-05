@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plantas>
+    <planta>
+        <id>
+            <![CDATA[1]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Adiantum capillus-veneris]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Culantrillo de pozo]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Helecho con hojas finas]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Interior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[10]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[3]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Allamanda violacea]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Trompeta]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Planta  trepadora  o  enredadera  con  bonitas flores rosas a rojas en forma de trompeta y hojas perennes.]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[0]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[5]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Antigonon leptopus]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Coral  vine, Flor  de  San  Diego, Corona de reina]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Planta  trepadora,  con  zarcillos  presentes  en las  terminaciones  de  las  inflorescencias.  Tiene  las  raÃ­ces tuberosas. TamaÃ±o: Alcanza los 1-2 (-10) m de largo. Hojas alternas, espiraladas, simples.]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[0]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[6]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Beaucarnea inermis]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Beucarnea, Soyate, Petate  de caballo, Pata de vaca]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Planta siempre verde.]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[0]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[7]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Calathea crocata]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Calatea, Galatea]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Arbusto  de  follaje  ornamental  con  pequeÃ±itas flores blancas]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[33]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[9]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Coleus blumei]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Coleo, Cretona]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Anual  o  perenne,  herbÃ¡cea  o  semiarbustiva. Sus hojas son opuestas, simples, en forma de corazÃ³n. Los colores varÃ­an entre el verde y el amarillo, el rojo, el bronce, el pÃºrpura y el gris, todos ellos variadamente jaspeados.]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[25]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[10]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Cuphea hyssopifolia.]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Mosquito, Trueno  de  Venus, Lluvia  de estrella, Falso brezo mexicano.]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Arbusto perenne tropical de forma compacta]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Interior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[5]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[11]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Euphorbia milii var. splendens.]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Corona de Cristo, Espinas de Cristo.]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Arbusto con  flores  y  espinas.  Hojas de  forma oblongo-espatulada,  verdes  en  ambas  caras  y  provistas  de una espina en su base de implantaciÃ³n al tallo. ]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[10]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[12]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Euphorbia pulcherrima.]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Nochebuena, Flor de Santa Catarina.]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[Arbusto con brÃ¡cteas  y  en diferentes colores: rojas, amarillas, salmÃ³n, blancas, etc.]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[100]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[14]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Paretus Bianyencus]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Parer]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[La nueva planta]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[10]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[16]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[Georgius]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[Jordi]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[La planta del Jordi]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Exterior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[1]]>
+        </stock>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[20]]>
+        </id>
+        <nombre_cientifico>
+            <![CDATA[test]]>
+        </nombre_cientifico>
+        <nombre_comun>
+            <![CDATA[test]]>
+        </nombre_comun>
+        <descripcion>
+            <![CDATA[un test]]>
+        </descripcion>
+        <ubicacion>
+            <![CDATA[Interior]]>
+        </ubicacion>
+        <stock>
+            <![CDATA[10]]>
+        </stock>
+    </planta>
+</plantas>

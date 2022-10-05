@@ -5,10 +5,13 @@ $biblioteca = new Biblioteca();
 $biblioteca->leerUbicaciones();
 $modificar = $biblioteca->leerLibro($_GET['id_libro']);
 $datoAutor = $biblioteca->leerAutor($_GET['id_libro']);
+$datoLocation = new Biblioteca();
+$location = $datoLocation->leerUbicacion($modificar['id_estante']);
 $title = $modificar['nombre'];
-$autor = $datoAutor['nombre'];
+//$autor = $datoAutor['nombre'];
 
 echo '<pre>';
+//print_r($_GET);
 //print_r($biblioteca->locations);
 //print_r($modificar);
 //print_r($datoAutor);
@@ -21,9 +24,9 @@ $autores -> leerAutors();
 $ubicaciones -> leerUbicaciones();
 
 echo '<pre>';
-//print_r($autores->autores);
+print_r($ubicaciones->locations);
 echo '</pre>';
-
+print_r($_GET);
 ?>
 
 
@@ -34,7 +37,7 @@ echo '</pre>';
     <label>Titulo</label><input type="text" name="titulo" value="<?= $title ?>"><br>
     <label>Autor</label><select name="autor">
         <?php foreach ($autores->autores as $aut) {
-            if ($loc['id'] == $_GET['id_libro']) {
+            if ($aut['id'] == $modificar['id_autor']) {
                 echo '<option value="' . $aut['id'] . '" selected>' . $aut['nombre'] . '</option>';
             }else{
                 echo '<option value="' . $aut['id'] . '">' . $aut['nombre'] . '</option>';
@@ -45,7 +48,7 @@ echo '</pre>';
     <label>Ubicación</label>
 
     <select name="ubicacion">
-        <?php foreach ($biblioteca->locations as $loc) {
+        <?php foreach ($ubicaciones->locations as $loc) {
             if ($loc['id'] == $_GET['id_libro']) {
                 echo '<option value="' . $loc['id'] . '" selected>' . $loc['cordenadas'] . '</option>';
             }else{

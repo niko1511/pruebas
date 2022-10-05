@@ -1,5 +1,5 @@
 <?php 
-include '../models/bibliotecaModel.php';
+include_once '../models/bibliotecaModel.php';
 
 $deleteLibro = new Biblioteca();
 $deleteLibro -> deleteLibro($_GET['id_libro']);

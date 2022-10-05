@@ -1,5 +1,13 @@
 <?php 
-include '../models/bibliotecaModel.php';
+if(!empty($_POST['title'])){
+session_start();
+if(isset($_SESSION['verifica'])){
+$verifica = $_SESSION['verifica'];
+
+if($verifica ==1){
+
+    unset($_SESSION['verifica']);
+include_once '../models/bibliotecaModel.php';
 
 $InsertNewLibro = new Biblioteca();
 $InsertNewLibro -> InsertLibroBiblioteca($_POST['title'],$_POST['autor'],$_POST['location']);
@@ -7,7 +15,8 @@ $InsertNewLibro -> InsertLibroBiblioteca($_POST['title'],$_POST['autor'],$_POST[
 $biblioteca = new Biblioteca();
 $biblioteca -> leerLibros();
 
-include_once '../views/headView.php';
-include_once '../views/leerBibliotecaView.php';
-include_once '../views/footerView.php';
-?>
+}
+}
+}
+include_once '../controllers/leerBibliotecaController.php';
+

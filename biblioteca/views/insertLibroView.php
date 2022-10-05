@@ -1,3 +1,4 @@
+<section>
 <form action="insertLibroController.php" method="post">
     <label for="title">Titulo del Libro</label>
     <input type="text" name="title"><br>
@@ -23,3 +24,4 @@
      <br>
     <input type="submit" value="Agregar" name="insertar">
 </form>
+</section>

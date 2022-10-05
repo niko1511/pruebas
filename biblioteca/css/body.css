@@ -1,0 +1,97 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+table {
+  width: 90vw;
+  border: 1px solid red;
+  text-align: left;
+  height: calc(100vh - 300px);
+  display: block;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: burlywood;
+}
+
+.fa-sharp.fa-solid.fa-eye {
+  color: dimgray;
+}
+
+.fa-solid.fa-infinity {
+  color: azure;
+  font-size: 32px;
+}
+
+#disponible {
+  background-color: aquamarine;
+}
+
+#ocupado {
+  color: beige;
+  background-color: brown;
+}
+
+td {
+  padding: 10px;
+  background-color: bisque;
+  width: 100%;
+}
+td:nth-of-type(n + 2) {
+  background-color: brown;
+}
+td:nth-of-type(n + 3) {
+  background-color: aquamarine;
+}
+
+/*input search libros*/
+#searchcontainer {
+  display: block;
+  position: relative;
+  float: inline-start;
+  cursor: pointer;
+}
+#searchcontainer input :hover {
+  width: 200px;
+}
+
+#searchcontainer input {
+  color: aliceblue;
+  background-color: #222;
+}
+
+input[type="search"] {
+  border-radius: 20px;
+  color: rgb(48, 55, 150);
+  text-align: left;
+  letter-spacing: 2px;
+  text-shadow: 0 0 2px black;
+  height: 30px;
+  width: 7vw;
+  transition: 1s;
+  z-index: 2;
+}
+
+input[type="search"]:hover {
+  transition: 1s;
+  width: 200px;
+}
+
+#input-search {
+  padding-left: 5px;
+  width: 75px;
+}
+#input-search:hover {
+  width: 200px;
+}
+
+/*change color favicon search*/
+#searchcontainer i {
+  transition: 1s;
+  padding-top: 6vh;
+  padding-bottom: 2vh;
+  padding-right: 4vw;
+  color: rgb(134, 29, 29);
+}

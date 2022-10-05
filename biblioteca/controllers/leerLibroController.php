@@ -1,13 +1,22 @@
 <?php
-include '../models/bibliotecaModel.php';
+include_once '../models/bibliotecaModel.php';
 $datoLibro = new Biblioteca();
 $dato = $datoLibro->leerLibro($_GET['id_libro']);
-$datoAutor = new Biblioteca();
-$autor = $datoAutor->leerAutor($_GET['id_libro']);
+
 $datoLocation = new Biblioteca();
-$location = $datoLocation->leerUbicacion($_GET['id_libro']);
+$location = $datoLocation->leerUbicacion($dato['id_estante']);
+
+$datoAutor = new Biblioteca();
+$autor = $datoAutor->leerAutor($dato['id_autor']);
 include_once '../views/headView.php';
+
+
+echo '<pre>';
+//print_r($dato);
+
+echo '<pre>';
 ?>
+<section>
 <table>
     <tr>
         <th>Titulo</th>
@@ -40,6 +49,6 @@ include_once '../views/headView.php';
 
 <a href="../controllers/deleteLibroController.php?id_libro=<?php echo $_GET['id_libro'] ?>">Borrar</a>
 <a href="../controllers/editLibroFormController.php?id_libro=<?php echo $_GET['id_libro'] ?>">Modificar</a>
-
+</section>
 <?php include_once '../views/footerView.php';
 ?>

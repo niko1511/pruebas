@@ -179,12 +179,4 @@ class Biblioteca extends connect
 			$this->usuarios[] = $fila;
 		}
 	}
-
-	public function deleteLibros()
-	{
-		$sql = "DELETE FROM `bf_libros` WHERE 0";
-		$query = $this->db->query($sql);
-		//$fila = $query->fetch_assoc();
-		
-	}
 }

@@ -1,7 +1,7 @@
 <?php 
-include '../models/bibliotecaModel.php';
+include_once '../models/bibliotecaModel.php';
 echo '<pre>';
-print_r($_POST);
+//print_r($_POST);
 echo '</pre>';
 $id =$_POST['ubicacion'];
 $modificarLibro = new Biblioteca();

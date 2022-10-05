@@ -1,10 +1,10 @@
 <?php
 include '../models/bibliotecaModel.php';
-
+include_once '../views/headView.php';
 echo '<pre>';
 //print_r($_POST);
 echo '</pre>';
-
+echo '<section>';
 if (isset($_POST['cancel']) == 'Cancel') {
     $biblioteca = new Biblioteca();
     $biblioteca->leerLibros();
@@ -24,11 +24,8 @@ if (isset($_POST['cancel']) == 'Cancel') {
 
         $biblioteca = new Biblioteca();
         $biblioteca->leerLibros();
-    } else {
-        echo 'campo vacio';
-    }
-    //include_once '../views/headView.php';
-    //include_once '../views/leerBibliotecaView.php';
+    } 
+    echo '</section>';
     include_once '../controllers/insertLocationController.php';
     include_once '../views/footerView.php';
 }
