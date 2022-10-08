@@ -17,38 +17,39 @@ echo '<pre>';
 echo '<pre>';
 ?>
 <section>
-<table>
-    <tr>
-        <th>Titulo</th>
-        <th>Autor</th>
-        <th>Ubicación</th>
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Ubicación</th>
 
-    </tr>
-    <tr>
-        <td><?php echo $dato['nombre'] ?></td>
-        <td><?php
-            if (empty($autor['nombre'])) {
-                echo '<a href="">agregar autor</a>';
-            } else {
-                echo $autor['nombre'];
-            }
+        </tr>
+        <tr>
+            <td><?php echo $dato['nombre'] ?></td>
+            <td><?php
+                if (empty($autor['nombre'])) {
+                    echo '<a href="">agregar autor</a>';
+                } else {
+                    echo $autor['nombre'];
+                }
 
-            ?></td>
+                ?></td>
 
-        <td><?php
-            if (empty($location['cordenadas'])) {
-                echo '<a href="">agregar Ubicación</a>';
-            } else {
-                echo $location['cordenadas'];
-            }
+            <td><?php
+                if (empty($location['cordenadas'])) {
+                    echo '<a href="">agregar Ubicación</a>';
+                } else {
+                    echo $location['cordenadas'];
+                }
 
-            ?></td>
+                ?></td>
 
-    </tr>
-</table>
+        </tr>
+        <a href="../controllers/deleteLibroController.php?id_libro=<?php echo $_GET['id_libro'] ?>">Borrar</a><br>
+        <a href="../controllers/editLibroFormController.php?id_libro=<?php echo $_GET['id_libro'] ?>">Modificar</a>
+    </table>
 
-<a href="../controllers/deleteLibroController.php?id_libro=<?php echo $_GET['id_libro'] ?>">Borrar</a>
-<a href="../controllers/editLibroFormController.php?id_libro=<?php echo $_GET['id_libro'] ?>">Modificar</a>
+
 </section>
 <?php include_once '../views/footerView.php';
 ?>

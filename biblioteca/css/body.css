@@ -1,20 +1,19 @@
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: small;
+  background-color: antiquewhite;
 }
 
 table {
   width: 90vw;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   text-align: left;
   height: calc(100vh - 300px);
   display: block;
   overflow: auto;
 }
 
-a {
-  text-decoration: none;
-  color: burlywood;
-}
+
 
 .fa-sharp.fa-solid.fa-eye {
   color: dimgray;
@@ -26,18 +25,23 @@ a {
 }
 
 #disponible {
-  background-color: aquamarine;
+  background-color:chartreuse;
+  border-radius: 15px;
 }
 
 #ocupado {
   color: beige;
   background-color: brown;
+  border-radius: 15px;
 }
 
 td {
   padding: 10px;
   background-color: bisque;
   width: 100%;
+  color: burlywood;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 td:nth-of-type(n + 2) {
   background-color: brown;
@@ -45,6 +49,7 @@ td:nth-of-type(n + 2) {
 td:nth-of-type(n + 3) {
   background-color: aquamarine;
 }
+
 
 /*input search libros*/
 #searchcontainer {

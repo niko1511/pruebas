@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta charset="utf-8">
+<title>Ajax2 - Comprobar datos formularios</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+
+function crea_xml() {
+  var fecha = $("#fecha_nacimiento").val(); 
+  var cp = $("#codigo_postal").val(); 
+  var telefono = $("#telefono").val(); 
+ 
+  var xml = "<parametros>";
+  xml = xml + "<fecha_nacimiento>" + fecha + "<\/fecha_nacimiento>";
+  xml = xml + "<codigo_postal>" + cp + "<\/codigo_postal>";
+  xml = xml + "<telefono>" + telefono + "<\/telefono>";
+  xml = xml + "<\/parametros>";
+  return xml;
+}
+
+function comprobar_formulario(data_xml)
+{   
+$.ajax({
+    url:  '/sas/jquery_ajax/servidor/validaDatosXML.php',
+    data: data_xml, 
+    type: 'POST',
+    contentType: "text/xml",
+    dataType: "text",
+    beforeSend: function () {
+                    $("#disponible").html("Comprobando");
+                },
+    success:  function (response) {
+                		procesar_respuesta(response);
+                }
+}); 
+}
+
+function procesar_respuesta(doc_xml)
+{
+	  var documento_xml = $.parseXML(doc_xml);
+	  var $xml = $(documento_xml);
+      var mensaje = $xml.find("mensaje").text();
+      var telefono = $xml.find("telefono").text();
+      var fecha_nacimiento =$xml.find("fecha_nacimiento").text();
+      var codigo_postal = $xml.find("codigo_postal").text();
+      $("#respuesta").html(mensaje + "<br/>" + "Fecha nacimiento = " + fecha_nacimiento + "<br/>" + "Codigo postal = " + codigo_postal + "<br/>" + "Telefono = " + telefono);
+ }
+
+
+
+
+
+$(document).ready(function(){
+	$("#valida").click(function () {
+		comprobar_formulario(crea_xml());
+    });
+});
+</script>
+</head>
+
+<body>
+<form>
+  <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+  <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" /><br/>
+ 
+  <label for="codigo_postal">Codigo postal:</label>
+  <input type="text" id="codigo_postal" name="codigo_postal" /><br/>
+ 
+  <label for="telefono">Telefono:</label>
+  <input type="text" id="telefono" name="telefono" /><br/>
+ 
+  <input type="button" value="Validar datos" id="valida"/>
+</form>
+ 
+<div id="respuesta"></div>
+</body>
+</html>

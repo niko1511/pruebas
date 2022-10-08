@@ -1,7 +1,6 @@
 /*       NAVEGATION           */
 
 #nav {
-  font-family: "Roboto Mono", monospace;
   display: table-caption;
   text-align: center;
   margin-left: calc(100% / 3);
@@ -10,6 +9,8 @@
 #nav ul {
   padding: 10px;
   margin: 0;
+  color: blueviolet;
+  font-size: xx-large;
 }
 
 #nav li {
@@ -24,20 +25,23 @@
 }
 
 #nav ul ul {
-  width: 25vw;
-  position: fixed;
+  width: 200px;
+  position: absolute;
   left: 0;
   border-radius: 10px;
   background-color: wheat;
   text-align: start;
-  margin-left: -106px;
+  margin-left: -159px;
 }
 
 #nav ul ul a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
   text-align: center;
   padding: 2px 2px;
-  font-size: 2.2vw;
-  width: 25vw;
+  width: 100%;
+  display: block;
 }
 #nav ul ul a:hover {
   position: relative;
@@ -143,11 +147,6 @@ figure {
   width: 98%;
   height: 50vh;
   border-color: rgba(255, 255, 255, 0);
-}
-a {
-  text-decoration: none;
-  font-size: 2rem;
-  font-style: italic;
 }
 
 .parrafo {
@@ -258,7 +257,7 @@ tag:nth-child(6) a {
 tag:nth-child(6) {
   background-color: rgb(83, 187, 97);
 }
-
+/*
 @media all and (min-width: 550px) {
   .exercises {
     display: grid;
@@ -281,3 +280,4 @@ tag:nth-child(6) {
     grid-gap: 0.8rem;
   }
 }
+*/

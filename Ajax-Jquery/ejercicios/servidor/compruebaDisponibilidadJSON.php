@@ -1,4 +1,5 @@
 <?php
+
 $login = $_POST["login"];
 
 srand((double)microtime()*1000000);
@@ -28,6 +29,7 @@ else {
 		join("\", \"", $alternativasAutomaticas)."\" ] \n".
 		"}";
 }
+
 
 
 ?>
