@@ -1,5 +1,5 @@
 <?php
-include_once '../models/bibliotecaModel.php';
+include_once '../../models/bibliotecaModel.php';
 
 $biblioteca = new Biblioteca();
 $biblioteca->leerUbicaciones();
@@ -24,16 +24,18 @@ $autores -> leerAutors();
 $ubicaciones -> leerUbicaciones();
 
 echo '<pre>';
-print_r($ubicaciones->locations);
+//print_r($ubicaciones->locations);
 echo '</pre>';
-print_r($_GET);
+//print_r($_GET);
+
+
+include_once '../../views/headView.php';
 ?>
 
 
 
-<form action="../controllers/editLibroController.php" method="post">
-
-    <h1>form edit</h1>
+<form action="../../controllers/editController/editLibroController.php" method="post">
+    
     <label>Titulo</label><input type="text" name="titulo" value="<?= $title ?>"><br>
     <label>Autor</label><select name="autor">
         <?php foreach ($autores->autores as $aut) {
@@ -62,3 +64,7 @@ print_r($_GET);
         
         <input type="submit" value="Modificar">
 </form>
+
+<?php
+include_once '../../views/footerView.php';
+?>

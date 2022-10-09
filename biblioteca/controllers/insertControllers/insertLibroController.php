@@ -7,7 +7,7 @@ $verifica = $_SESSION['verifica'];
 if($verifica ==1){
 
     unset($_SESSION['verifica']);
-include_once '../models/bibliotecaModel.php';
+include_once '../../models/bibliotecaModel.php';
 
 $InsertNewLibro = new Biblioteca();
 $InsertNewLibro -> InsertLibroBiblioteca($_POST['title'],$_POST['autor'],$_POST['location']);
@@ -18,5 +18,5 @@ $biblioteca -> leerLibros();
 }
 }
 }
-include_once '../controllers/leerBibliotecaController.php';
+include_once '../../controllers/leerControllers/leerBibliotecaController.php';
 

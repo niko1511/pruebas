@@ -1,5 +1,5 @@
 <?php
-include_once '../config/connectClass.php';
+include_once '../../config/connectClass.php';
 class Biblioteca extends connect
 {
 	private $db;
@@ -56,10 +56,10 @@ class Biblioteca extends connect
 	{
 		$sql = "INSERT INTO `bf_libros` (`id`, `nombre`, `id_autor`, `id_estante`, `status`) VALUES (NULL, '$titulo', '$autor', '$ubicacion', '0');";
 		$this->db->query($sql);
-		
+
 		//obtengo el ultimo id ingresado 
-		 $last_id = $this->db->insert_id;
-		
+		$last_id = $this->db->insert_id;
+
 		$sql = "INSERT INTO `bf_estante` (`id`, `cordenadas`) VALUES ('$last_id', '$ubicacion');";
 		$this->db->query($sql);
 	}
@@ -185,6 +185,45 @@ class Biblioteca extends connect
 		$sql = "DELETE FROM `bf_libros` WHERE 0";
 		$query = $this->db->query($sql);
 		//$fila = $query->fetch_assoc();
+
+	}
+
+	public function deleteUser($id)
+	{
+		$sql = "DELETE FROM bf_prestamos_persona WHERE `bf_prestamos_persona`.`id` = $id";
+		$query = $this->db->query($sql);
 		
+
+		$sql = "DELETE FROM bf_personas WHERE `bf_personas`.`id` = $id";
+		$query = $this->db->query($sql);
+		
+
+	}
+
+	public function deleteLocation($id)
+	{
+		$sql = "DELETE FROM `bf_libros` WHERE `id_estante` = $id";
+		$query = $this->db->query($sql);
+
+		$sql = "DELETE FROM bf_estante WHERE `bf_estante`.`id` = $id";
+		$query = $this->db->query($sql);
+		
+
+	}
+
+	public function editLocation($id)
+	{
+		$sql = "DELETE FROM bf_estante WHERE `bf_estante`.`id` = $id";
+		$query = $this->db->query($sql);
+		//$fila = $query->fetch_assoc();
+
+	}
+
+	public function deleteAutor($id)
+	{
+		$sql = "DELETE FROM bf_autor WHERE `bf_autor`.`id` = $id";
+		$query = $this->db->query($sql);
+		//$fila = $query->fetch_assoc();
+
 	}
 }

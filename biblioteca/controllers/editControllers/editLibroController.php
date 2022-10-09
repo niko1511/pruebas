@@ -1,5 +1,5 @@
 <?php 
-include_once '../models/bibliotecaModel.php';
+include_once '../../models/bibliotecaModel.php';
 echo '<pre>';
 //print_r($_POST);
 echo '</pre>';
@@ -12,7 +12,7 @@ $biblioteca -> leerLibros();
 $statusLibro = $biblioteca-> statusLibro();
 
 
-include_once '../views/headView.php';
-include_once '../views/leerBibliotecaView.php';
-include_once '../views/footerView.php';
+include_once '../../views/headView.php';
+include_once '../../views/leerBibliotecaView.php';
+include_once '../../views/footerView.php';
 ?>

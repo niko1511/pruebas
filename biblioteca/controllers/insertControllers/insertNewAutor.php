@@ -1,6 +1,6 @@
 <?php
-include_once '../models/bibliotecaModel.php';
-include_once '../views/headView.php';
+include_once '../../models/bibliotecaModel.php';
+include_once '../../views/headView.php';
 echo '<pre>';
 //print_r($_POST);
 echo '</pre>';
@@ -12,7 +12,7 @@ if (isset($_POST['cancel']) == 'Cancel') {
     $statusLibro = new Biblioteca();
     $statusLibro->statusLibro();
 
-    include_once '../controllers/leerBibliotecaController.php';
+    include_once '../../controllers/leerControllers/leerBibliotecaController.php';
 } else {
     if (!empty($_POST['new_autor'])) {
 
@@ -24,6 +24,6 @@ if (isset($_POST['cancel']) == 'Cancel') {
         $biblioteca->leerLibros();
     }
 
-    include_once '../controllers/insertAutorController.php';
-    include_once '../views/footerView.php';
+    include_once '../../controllers/insertControllers/insertAutorController.php';
+    include_once '../../views/footerView.php';
 }

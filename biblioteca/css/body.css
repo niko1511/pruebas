@@ -8,12 +8,10 @@ table {
   width: 90vw;
   /*border: 1px solid red;*/
   text-align: left;
-  height: calc(100vh - 300px);
+  max-height: calc(100vh - 300px);
   display: block;
   overflow: auto;
 }
-
-
 
 .fa-sharp.fa-solid.fa-eye {
   color: dimgray;
@@ -25,7 +23,7 @@ table {
 }
 
 #disponible {
-  background-color:chartreuse;
+  background-color: chartreuse;
   border-radius: 15px;
 }
 
@@ -39,8 +37,8 @@ td {
   padding: 10px;
   background-color: bisque;
   width: 100%;
-  color: burlywood;
-  font-size: 1.2rem;
+  color: chocolate;
+  font-size: small;
   font-style: italic;
 }
 td:nth-of-type(n + 2) {
@@ -50,6 +48,14 @@ td:nth-of-type(n + 3) {
   background-color: aquamarine;
 }
 
+#autor {
+  background-color: aliceblue;
+}
+
+#borrar-editar {
+  display: flex;
+  background-color: rgb(223, 215, 215);
+}
 
 /*input search libros*/
 #searchcontainer {
@@ -57,14 +63,8 @@ td:nth-of-type(n + 3) {
   position: relative;
   float: inline-start;
   cursor: pointer;
-}
-#searchcontainer input :hover {
-  width: 200px;
-}
-
-#searchcontainer input {
-  color: aliceblue;
-  background-color: #222;
+  direction: rtl;
+  padding-right: 20px;
 }
 
 input[type="search"] {
@@ -72,16 +72,11 @@ input[type="search"] {
   color: rgb(48, 55, 150);
   text-align: left;
   letter-spacing: 2px;
-  text-shadow: 0 0 2px black;
-  height: 30px;
+  text-shadow: 0 0 2px rgb(6, 146, 146);
   width: 7vw;
   transition: 1s;
-  z-index: 2;
-}
-
-input[type="search"]:hover {
-  transition: 1s;
-  width: 200px;
+  float: left;
+  margin-top: -7px;
 }
 
 #input-search {
@@ -99,4 +94,6 @@ input[type="search"]:hover {
   padding-bottom: 2vh;
   padding-right: 4vw;
   color: rgb(134, 29, 29);
+  display: contents;
+  margin-top: 17px;
 }

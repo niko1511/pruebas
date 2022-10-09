@@ -1,7 +1,7 @@
 <?php 
 // cargamos el controlador
 
-header('Location: ./controllers/leerBibliotecaController.php');
+header('Location: ./controllers/leerControllers/leerBibliotecaController.php');
 
 
 ?>

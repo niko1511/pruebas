@@ -1,6 +1,6 @@
 <?php
-include '../models/bibliotecaModel.php';
-include_once '../views/headView.php';
+include '../../models/bibliotecaModel.php';
+include_once '../../views/headView.php';
 echo '<pre>';
 //print_r($_POST);
 echo '</pre>';
@@ -11,10 +11,10 @@ if (isset($_POST['cancel']) == 'Cancel') {
 
     $statusLibro = new Biblioteca();
     $statusLibro->statusLibro();
-    include_once '../views/headView.php';
-    include_once '../views/leerBibliotecaView.php';
+    include_once '../../views/headView.php';
+    include_once '../../views/leerBibliotecaView.php';
     //include_once '../controllers/insertLocationController.php';
-    include_once '../views/footerView.php';
+    include_once '../../views/footerView.php';
 } else {
     if (!empty($_POST['new_location'])) {
 
@@ -26,6 +26,6 @@ if (isset($_POST['cancel']) == 'Cancel') {
         $biblioteca->leerLibros();
     } 
     echo '</section>';
-    include_once '../controllers/insertLocationController.php';
-    include_once '../views/footerView.php';
+    include_once '../../controllers/insertControllers/insertLocationController.php';
+    include_once '../../views/footerView.php';
 }

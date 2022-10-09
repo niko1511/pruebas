@@ -10,7 +10,7 @@ $json_a = json_decode($rows, true);
 
 foreach ($json_a as $key => $rows) {
 
-	$file = fopen("../servidor/cargarIntradayXML.php", "w");
+	$file = fopen("../servidor/cargaIntradayXML.php", "w");
 	$txt = utf8_encode('<?php ') . "\r\n";
 	$txt .= utf8_encode('header("Content-Type: application/xml");') . "\r\n";
 	$txt .= utf8_encode("echo(" . "'" . "<INTRADAY>" . "\r\n");

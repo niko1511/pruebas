@@ -9,7 +9,7 @@ echo '</pre>';
 
 //echo $datoLibro['status'];
 
-echo '<form action="../controllers/asignarLibroController.php" method="post">';
+echo '<form action="../controllers/estadoControllers/asignarLibroController.php" method="post">';
 echo '<h1>' . $datoLibro['nombre'] . '</h1>';
 echo '<label >Ubicación actual</label>';
 echo '<select name="select_location" >';

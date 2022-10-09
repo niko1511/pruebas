@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bliblioteca Familiar</title>
-    <link rel="stylesheet" href="../css/master.css">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/heard.css">
-    <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../../css/master.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/heard.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/slider.css">
     <!--favicon web fontawesome -->
     <script
       src="https://kit.fontawesome.com/53266cd5ae.js"
@@ -24,7 +24,7 @@
 <div class="grid-container">
       <!--header-->
       <nav class="header">
-        <a href="../index.php" class="homeTouch" onclick="home()">
+        <a href="../../index.php" class="homeTouch" onclick="home()">
           <i class="fa-solid fa-infinity"></i>
         </a>
         <h1>Biblioteca Familiar</h1>

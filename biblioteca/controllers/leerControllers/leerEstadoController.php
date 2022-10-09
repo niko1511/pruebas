@@ -1,6 +1,6 @@
 <?php 
 
-include_once '../models/bibliotecaModel.php';
+include_once '../../models/bibliotecaModel.php';
 $biblioteca = new Biblioteca();
 
 $datoUsuario = $biblioteca -> leerUsuario($_GET['id_libro']);
@@ -12,6 +12,6 @@ echo '<pre>';
 
 echo '</pre>';
 
-include_once '../views/headView.php';
+include_once '../../views/headView.php';
 //include '../views/leerEstadoView.php';
-include_once '../views/footerView.php';
+include_once '../../views/footerView.php';
