@@ -1,9 +1,6 @@
 <?php
 include_once '../../models/bibliotecaModel.php';
 include_once '../../views/headView.php';
-echo '<pre>';
-//print_r($_POST);
-echo '</pre>';
 
 if (isset($_POST['cancel']) == 'Cancel') {
     $biblioteca = new Biblioteca();

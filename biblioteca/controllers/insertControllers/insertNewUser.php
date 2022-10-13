@@ -2,10 +2,6 @@
 include_once '../../models/bibliotecaModel.php';
 include_once '../../views/headView.php';
 
-echo '<pre>';
-//print_r($_POST);
-echo '</pre>';
-
 if (isset($_POST['cancel']) == 'Cancel') {
     $biblioteca = new Biblioteca();
     $biblioteca->leerUsuarios();
@@ -13,7 +9,7 @@ if (isset($_POST['cancel']) == 'Cancel') {
     $statusLibro = new Biblioteca();
     $statusLibro->statusLibro();
 
-    include_once '../../controllers/leerBibliotecaController.php';
+    include_once '../../controllers/leerControllers/leerBibliotecaController.php';
 } else {
     if (!empty($_POST['new_user'])) {
 
@@ -25,6 +21,6 @@ if (isset($_POST['cancel']) == 'Cancel') {
         $biblioteca->leerLibros();
     }
 
-    include_once '../../controllers/insertUserController.php';
+    include_once '../../controllers/insertControllers/insertUserController.php';
     include_once '../../views/footerView.php';
 }

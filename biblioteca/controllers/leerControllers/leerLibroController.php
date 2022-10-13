@@ -11,10 +11,6 @@ $autor = $datoAutor->leerAutor($dato['id_autor']);
 include_once '../../views/headView.php';
 
 
-echo '<pre>';
-//print_r($dato);
-
-echo '<pre>';
 ?>
 <section>
     

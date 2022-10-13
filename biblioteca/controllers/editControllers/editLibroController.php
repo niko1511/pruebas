@@ -1,8 +1,6 @@
 <?php 
 include_once '../../models/bibliotecaModel.php';
-echo '<pre>';
-//print_r($_POST);
-echo '</pre>';
+
 $id =$_POST['ubicacion'];
 $modificarLibro = new Biblioteca();
 $modificarLibro -> modificarLibro($_POST['id'],$_POST['titulo'], $_POST['autor'] ,$_POST['ubicacion']);

@@ -2,14 +2,8 @@
 <?php
 
 echo '<pre>';
-//print_r($biblioteca->usuarios);
-//print_r($datoLibro);
-//print_r($locations);
-echo '</pre>';
 
-//echo $datoLibro['status'];
-
-echo '<form action="../controllers/estadoControllers/asignarLibroController.php" method="post">';
+echo '<form action="../../controllers/estadoControllers/asignarLibroController.php" method="post">';
 echo '<h1>' . $datoLibro['nombre'] . '</h1>';
 echo '<label >Ubicación actual</label>';
 echo '<select name="select_location" >';
@@ -32,6 +26,6 @@ if ($datoLibro['status'] == $users['id']) {
 echo '</select>';
 echo '<input type="submit" value="Actualizar">';
 echo '</form>';
-//print_r($datoLibro);
+
 ?>
 </section>

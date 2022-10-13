@@ -8,25 +8,11 @@ $datoAutor = $biblioteca->leerAutor($_GET['id_libro']);
 $datoLocation = new Biblioteca();
 $location = $datoLocation->leerUbicacion($modificar['id_estante']);
 $title = $modificar['nombre'];
-//$autor = $datoAutor['nombre'];
 
-echo '<pre>';
-//print_r($_GET);
-//print_r($biblioteca->locations);
-//print_r($modificar);
-//print_r($datoAutor);
-echo '</pre>';
-
-//echo 'separacion';
 $autores = new Biblioteca();
 $ubicaciones = new Biblioteca();
 $autores -> leerAutors();
 $ubicaciones -> leerUbicaciones();
-
-echo '<pre>';
-//print_r($ubicaciones->locations);
-echo '</pre>';
-//print_r($_GET);
 
 
 include_once '../../views/headView.php';
@@ -34,7 +20,7 @@ include_once '../../views/headView.php';
 
 
 
-<form action="../../controllers/editController/editLibroController.php" method="post">
+<form action="../../controllers/editControllers/editLibroController.php" method="post">
     
     <label>Titulo</label><input type="text" name="titulo" value="<?= $title ?>"><br>
     <label>Autor</label><select name="autor">
