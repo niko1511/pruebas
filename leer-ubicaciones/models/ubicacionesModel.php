@@ -1,5 +1,5 @@
 <?php
-include_once 'connectClass.php';
+include_once '../config/connectClass.php';
 class Ubicacion extends connect
 {
     private $db;
@@ -18,6 +18,12 @@ class Ubicacion extends connect
 			$this->ubicaciones[] = $fila;
 		}
         
+    }
+
+
+    public function insertUbicacion($nombreUbi){
+        $sql = "INSERT `Plantas_Ubicacion` SET `Ubicacion` = '$nombreUbi'";
+        $query = $this->db->query($sql);
     }
 
 

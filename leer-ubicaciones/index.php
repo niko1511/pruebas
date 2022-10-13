@@ -39,4 +39,4 @@ foreach ($ubicaciones->ubicaciones as $ubi) {
 }
 
 */
-header('Location: leerUbicacionesControllers.php');
+header('Location: ../leer-ubicaciones/controllers/leerUbicacionesControllers.php');
