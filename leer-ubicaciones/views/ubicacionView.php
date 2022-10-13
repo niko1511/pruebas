@@ -21,3 +21,4 @@ foreach ($ubicaciones->ubicaciones as $ubi) {
 echo '</table>';
 ?>
 <a href="../controllers/modificarUbicacionController.php">Modificar</a>
+<a href="../controllers/leerPlantasController.php">Leer plantas</a>
