@@ -16,4 +16,3 @@ $listaPlantas->leerPlantas();
 
 include_once '../views/leerPlantasView.php';
 
-?>

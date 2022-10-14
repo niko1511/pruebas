@@ -14,7 +14,7 @@ if (isset($_POST['cancel']) == 'Cancel') {
     include_once '../../views/footerView.php';
 } else {
     if (!empty($_POST['new_location'])) {
-
+print_r($_POST);
         $InsertNewLibro = new Biblioteca();
         $InsertNewLibro->InsertNewLocation($_POST['new_location']);
 
