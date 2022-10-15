@@ -55,7 +55,20 @@ class Plantas extends connect
         $sql = "INSERT INTO `plantas_plantas` (`id`, `Nombre_cientifico`, `Nombre_comun`, `Descripcion`, `id_ubicacion`, `stock`) VALUES (NULL, '$nombre_cientifico', '$nombre_comun', '$descripcion', '$idUbi', '$stock');";
         $query = $this->db->query($sql);
     }
-    public function  borrarPlanta($idPlanta){}
+    public function  borrarPlanta($idPlanta){
+
+        $sql = "DELETE FROM plantas_plantas WHERE `plantas_plantas`.`id` = $idPlanta";
+       
+      
+       $query = $this->db->query($sql);
+        if($query = $this->db->query($sql)>0){
+            echo 'la planta fue borra';
+        }else{
+            echo 'error al querer borrar la planta ';
+        }
+
+        
+    }
    
 }
 
