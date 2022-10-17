@@ -54,15 +54,14 @@ class Biblioteca extends connect
 
 	public function InsertLibroBiblioteca($titulo, $autor, $ubicacion)
 	{
+
 		$sql = "INSERT INTO `bf_libros` (`id`, `nombre`, `id_autor`, `id_estante`, `status`) VALUES (NULL, '$titulo', '$autor', '$ubicacion', '0');";
 		$this->db->query($sql);
 
 		//obtengo el ultimo id ingresado 
 		$last_id = $this->db->insert_id;
 
-		$ubicacion_cordenadas = "INSERT INTO `bf_estante` (`id`, `cordenadas`) VALUES ('$last_id', '$ubicacion');";
-
-		$sql = "INSERT INTO `bf_estante` (`id`, `cordenadas`) VALUES ('$last_id', '$ubicacion');";
+		$sql = "INSERT INTO `bf_estante` (`id`, `id_cordenadas`, `cordenadas`) VALUES (NULL, '$last_id', '$ubicacion');";
 		$this->db->query($sql);
 	}
 
@@ -75,7 +74,7 @@ class Biblioteca extends connect
 
 	public function InsertNewAutor($ubicacion)
 	{
-		$sql = "INSERT INTO `bf_autor` (`id`, `nombre`) VALUES (NULL, '$ubicacion'); ";
+		$sql = "INSERT INTO `bf_autor` (`id`, `id_autor`, `nombre`) VALUES (NULL, '0', '$ubicacion'); ";
 		$this->db->query($sql);
 	}
 
@@ -139,6 +138,15 @@ class Biblioteca extends connect
 	}
 	public function leerUbicacion($idLibro)
 	{
+		$sql = "SELECT * FROM `bf_estante` WHERE `id_cordenadas` =$idLibro";
+
+		$query = $this->db->query($sql);
+		$fila = $query->fetch_assoc();
+		return $fila;
+	}
+
+	public function leerUbicacion1($idLibro)
+	{
 		$sql = "SELECT * FROM `bf_estante` WHERE `id` =$idLibro";
 
 		$query = $this->db->query($sql);
@@ -163,9 +171,9 @@ class Biblioteca extends connect
 	}
 
 
-	public function leerUsuario($idLibro)
+	public function leerUsuario($id)
 	{
-		$sql = "SELECT `bf_libro_persona`.`id`, bf_autor.nombre AS autor, bf_personas.nombre, `fecha_inicio`, `fecha_fin`, bf_libros.nombre, bf_estante.cordenadas, bf_libro_persona.status FROM `bf_libro_persona`, `bf_autor`, `bf_personas`, `bf_libros`, `bf_estante` WHERE bf_libro_persona.id_persona = bf_personas.id AND bf_libro_persona.id_libro = bf_libros.id AND bf_libro_persona.autor = bf_autor.id AND bf_libro_persona.id_estante = bf_estante.id AND `bf_libro_persona`.`id` = $idLibro;";
+		$sql = "SELECT * FROM `bf_personas` WHERE `id`=$id";
 
 		$query = $this->db->query($sql);
 		$fila = $query->fetch_assoc();
@@ -192,15 +200,11 @@ class Biblioteca extends connect
 
 	public function deleteUser($id)
 	{
-		$sql = "DELETE FROM bf_prestamos_persona WHERE `bf_prestamos_persona`.`id` = $id";
-		$query = $this->db->query($sql);
 		
-
 		$sql = "DELETE FROM bf_personas WHERE `bf_personas`.`id` = $id";
 		$query = $this->db->query($sql);
-		
 
-	}
+			}
 
 	public function deleteLocation($id)
 	{
@@ -212,12 +216,39 @@ class Biblioteca extends connect
 		
 
 	}
+	public function modificarLocation($id,$cordenadas){
+		
+		$sql = "UPDATE `bf_estante` SET `cordenadas` = '$cordenadas' WHERE `bf_estante`.`id` = $id";
+		$this->db->query($sql);
+	}
+
+	public function modificarUser($id,$user){
+		
+		$sql = "UPDATE `bf_personas` SET `nombre` = '$user' WHERE `bf_personas`.`id` = $id";
+		$this->db->query($sql);
+	}
+
+	public function modificarAutor($id,$nombre){
+		
+		$sql = "UPDATE `bf_autor` SET `nombre` = '$nombre' WHERE `bf_autor`.`id` = $id";
+		$this->db->query($sql);
+	}
 
 	public function editLocation($id)
 	{
-		$sql = "DELETE FROM bf_estante WHERE `bf_estante`.`id` = $id";
+		$sql = "SELECT * FROM `bf_estante` WHERE `id` =$id";
 		$query = $this->db->query($sql);
-		//$fila = $query->fetch_assoc();
+		$fila = $query->fetch_assoc();
+		return $fila;
+
+	}
+
+	public function editAutor($id)
+	{
+		$sql = "SELECT * FROM `bf_autor` WHERE `id` =$id";
+		$query = $this->db->query($sql);
+		$fila = $query->fetch_assoc();
+		return $fila;
 
 	}
 

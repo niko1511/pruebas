@@ -1,4 +1,4 @@
-
+<!--
 <searchbar id="searchcontainer">
         <input
           type="search"
@@ -8,7 +8,7 @@
           id="input-search"
         />
         <i class="fa-solid fa-magnifying-glass" id="btn_search"></i>
-      </searchbar>
+      </searchbar> -->
 <?php
 
 echo '<table>';

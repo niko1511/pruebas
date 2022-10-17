@@ -1,15 +1,13 @@
 <section>
 <?php
 
-print_r($locations);
-
 echo '<form action="../../controllers/estadoControllers/asignarLibroController.php" method="post">';
 echo '<h1>' . $datoLibro['nombre'] . '</h1>';
 echo '<label >Ubicación actual</label>';
 echo '<select name="select_location" >';
-
-echo '<option value="' . $locations['id'] . '" selected>' . $locations['cordenadas'] . '</option>';
-
+//foreach ($biblioteca->usuarios as $users){
+echo '<option value="' . $locations['id_cordenadas'] . '" selected>' . $locations['cordenadas'] . '</option>';
+//}
 
 echo '</select>';
 echo '<label >Asignar libro al usuario</label>';
