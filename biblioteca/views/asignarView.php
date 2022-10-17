@@ -1,7 +1,7 @@
 <section>
 <?php
 
-echo '<pre>';
+print_r($locations);
 
 echo '<form action="../../controllers/estadoControllers/asignarLibroController.php" method="post">';
 echo '<h1>' . $datoLibro['nombre'] . '</h1>';

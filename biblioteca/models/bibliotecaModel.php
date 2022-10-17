@@ -60,6 +60,8 @@ class Biblioteca extends connect
 		//obtengo el ultimo id ingresado 
 		$last_id = $this->db->insert_id;
 
+		$ubicacion_cordenadas = "INSERT INTO `bf_estante` (`id`, `cordenadas`) VALUES ('$last_id', '$ubicacion');";
+
 		$sql = "INSERT INTO `bf_estante` (`id`, `cordenadas`) VALUES ('$last_id', '$ubicacion');";
 		$this->db->query($sql);
 	}

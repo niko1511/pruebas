@@ -22,4 +22,5 @@ echo '</table>';
 ?>
 <a href="../controllers/modificarUbicacionController.php">Modificar</a><br>
 <a href="../controllers/leerPlantasController.php">Leer plantas</a><br>
-<a href="../controllers/generarPlantasXMLController.php">Generar plantas</a><br>
+<a href="../controllers/generarPlantasXMLController.php">Generar plantas XML</a><br>
+<a href="../controllers/generarPlantasJSONController.php">Generar plantas JSON</a><br>
