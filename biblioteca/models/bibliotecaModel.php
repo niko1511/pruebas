@@ -67,7 +67,7 @@ class Biblioteca extends connect
 
 	public function InsertNewLocation($ubicacion)
 	{
-		$sql = "INSERT INTO `bf_estante` (`id`, `cordenadas`) VALUES (NULL, '$ubicacion'); ";
+		$sql = "INSERT INTO `bf_estante` ( `cordenadas`) VALUES ( '$ubicacion')";
 		$this->db->query($sql);
 	}
 

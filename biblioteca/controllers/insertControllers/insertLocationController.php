@@ -8,7 +8,7 @@ $ubicaciones->leerUbicaciones();
 include_once '../../views/headView.php';
 ?>
 <section>
-<form action="../../controllers/insertControllers/insertNewLocation.php" method="post">
+<form action="../../controllers/insertControllers/insertNewLocationController.php" method="post">
     <label >Nueva Ubicacion</label><input type="text" name="new_location">
     <input type="submit" value="Agregar" name="agregar">
     <input type="submit" value="Cancelar" name="cancel">

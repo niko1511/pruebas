@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plantas>
+    <planta>
+        <id>
+            <![CDATA[3]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Allamanda modi]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Trompeta]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Planta  trepadora  o  enredadera  con  bonitas flores rosas a rojas en forma de trompeta y hojas perennes.]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[2]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[0]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[Exterior modificado]]>
+        </Ubicacion>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[5]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Antigonon leptopus]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Coral  vine, Flor  de  San  Diego, Corona de reina]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Planta  trepadora,  con  zarcillos  presentes  en las  terminaciones  de  las  inflorescencias.  Tiene  las  raíces tuberosas. Tamaño: Alcanza los 1-2 (-10) m de largo. Hojas alternas, espiraladas, simples.]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[2]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[0]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[Exterior modificado]]>
+        </Ubicacion>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[6]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Beaucarnea inermis]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Beucarnea, Soyate, Petate  de caballo, Pata de vaca]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Planta siempre verde.]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[2]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[0]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[Exterior modificado]]>
+        </Ubicacion>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[7]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Calathea crocata]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Calatea, Galatea]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Arbusto  de  follaje  ornamental  con  pequeñitas flores blancas]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[2]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[33]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[Exterior modificado]]>
+        </Ubicacion>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[9]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Coleus blumei]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Coleo, Cretona]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Anual  o  perenne,  herbácea  o  semiarbustiva. Sus hojas son opuestas, simples, en forma de corazón. Los colores varían entre el verde y el amarillo, el rojo, el bronce, el púrpura y el gris, todos ellos variadamente jaspeados.]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[2]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[25]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[Exterior modificado]]>
+        </Ubicacion>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[10]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Cuphea hyssopifolia.]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Mosquito, Trueno  de  Venus, Lluvia  de estrella, Falso brezo mexicano.]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Arbusto perenne tropical de forma compacta]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[1]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[5]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[modificado]]>
+        </Ubicacion>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[11]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Euphorbia milii var. splendens.]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Corona de Cristo, Espinas de Cristo.]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Arbusto con  flores  y  espinas.  Hojas de  forma oblongo-espatulada,  verdes  en  ambas  caras  y  provistas  de una espina en su base de implantación al tallo. ]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[2]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[10]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[Exterior modificado]]>
+        </Ubicacion>
+    </planta>
+    <planta>
+        <id>
+            <![CDATA[12]]>
+        </id>
+        <Nombre_cientifico>
+            <![CDATA[Euphorbia pulcherrima.]]>
+        </Nombre_cientifico>
+        <Nombre_comun>
+            <![CDATA[Nochebuena, Flor de Santa Catarina.]]>
+        </Nombre_comun>
+        <Descripcion>
+            <![CDATA[Arbusto con brácteas  y  en diferentes colores: rojas, amarillas, salmón, blancas, etc.]]>
+        </Descripcion>
+        <id_ubicacion>
+            <![CDATA[2]]>
+        </id_ubicacion>
+        <stock>
+            <![CDATA[100]]>
+        </stock>
+        <Ubicacion>
+            <![CDATA[Exterior modificado]]>
+        </Ubicacion>
+    </planta>
+</plantas>
