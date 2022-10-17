@@ -1,4 +1,5 @@
 <?php
-echo $json = json_encode($listaPlantas);
-echo "  BYTES ".$bytes = file_put_contents("../json/myfile.json", $json); 
+header("Content-Type: application/json; charset=utf-8");
+ echo $json = json_encode($listaPlantas->plantas);
+$bytes = file_put_contents("../json/myfile.json", $json); 
 ?>
