@@ -24,3 +24,4 @@ echo '</table>';
 <a href="../controllers/leerPlantasController.php">Leer plantas</a><br>
 <a href="../controllers/generarPlantasXMLController.php">Generar plantas XML</a><br>
 <a href="../controllers/generarPlantasJSONController.php">Generar plantas JSON</a><br>
+<a href="../controllers/leerMarcasController.php"><h1>Examen2 Table Marcas</h1></a><br>

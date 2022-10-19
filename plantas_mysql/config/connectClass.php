@@ -1,10 +1,10 @@
 <?php
 class connect {
 	public function conexion() {
-		$user = "root";
+		$user = "nascor01";
 		$pass = "Nascor2022-2";
-		$host = "localhost";
-		$database = "ejercicio_plantas";
+		$host = "nascor01.md360.es";
+		$database = "nascor01_DB";
 			
 		$cnx = new mysqli($host, $user, $pass, $database);
 		
@@ -14,3 +14,4 @@ class connect {
 		return $cnx;
 	}
 }
+
